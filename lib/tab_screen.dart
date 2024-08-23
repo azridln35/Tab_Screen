@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'SMK Negeri 4 - Student Portal',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
         colorScheme:
             ColorScheme.fromSwatch(primarySwatch: Colors.blue).copyWith(
           secondary:
@@ -41,9 +41,9 @@ class TabScreen extends StatelessWidget {
               Tab(icon: Icon(Icons.group), text: 'Students'),
               Tab(icon: Icon(Icons.account_circle), text: 'Profile'),
             ],
-            labelColor: Colors.white,
+            labelColor: Colors.blueAccent,
             unselectedLabelColor: Colors.grey,
-            indicatorColor: Colors.white,
+            indicatorColor: Colors.black,
           ),
         ),
         body: TabBarView(
@@ -172,7 +172,7 @@ class StudentsTab extends StatelessWidget {
                         child: ListTile(
                           leading: CircleAvatar(
                             radius: 30,
-                            backgroundColor: Colors.blueAccent,
+                            backgroundColor: Colors.grey,
                             child: Text(
                               user.firstName[0],
                               style:
@@ -239,7 +239,7 @@ class ProfileTab extends StatelessWidget {
                 SizedBox(height: 20),
                 Center(
                   child: Text(
-                    'Full Name',
+                    'Muhammad Azri Idlan',
                     style: TextStyle(
                       fontSize: 26,
                       fontWeight: FontWeight.bold,
@@ -250,7 +250,7 @@ class ProfileTab extends StatelessWidget {
                 SizedBox(height: 10),
                 Center(
                   child: Text(
-                    'email@example.com',
+                    'azridln35@gmail.com',
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white70,
@@ -280,24 +280,24 @@ class ProfileTab extends StatelessWidget {
                         Divider(),
                         ListTile(
                           leading: Icon(Icons.person, color: Colors.blueAccent),
-                          title: Text('Full Name'),
-                          subtitle: Text('John Doe'),
+                          title: Text('Muhammad Azri Idlan'),
+                          subtitle: Text('Azridlan'),
                         ),
                         ListTile(
                           leading: Icon(Icons.cake, color: Colors.blueAccent),
                           title: Text('Date of Birth'),
-                          subtitle: Text('January 1, 2000'),
+                          subtitle: Text('Mei 30, 2006'),
                         ),
                         ListTile(
                           leading: Icon(Icons.phone, color: Colors.blueAccent),
                           title: Text('Contact Number'),
-                          subtitle: Text('+62 123 456 7890'),
+                          subtitle: Text('+62 858 9095 7110'),
                         ),
                         ListTile(
                           leading:
                               Icon(Icons.location_on, color: Colors.blueAccent),
                           title: Text('Address'),
-                          subtitle: Text('Jl. Example No. 123, Jakarta'),
+                          subtitle: Text('Kp.Pondok Bitung, RT.001/RW.002, Gg Rahayu Desa Sukaharja, Kec.Cijeruk kab. Bogor,Jawa barat'),
                         ),
                       ],
                     ),
